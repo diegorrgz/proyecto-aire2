@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contaminación del Aire</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:linear-gradient(120deg,#00c6ff,#0072ff);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+nav{
+position:sticky;
+top:0;
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+nav a{
+margin:15px;
+text-decoration:none;
+color:#0072ff;
+font-weight:600;
+}
+
+nav a:hover{
+color:#00c6ff;
+}
+
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.hero img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+/* FLIP CARDS */
+
+.flip-card{
+width:260px;
+height:320px;
+perspective:1000px;
+}
+
+.flip-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform .8s;
+transform-style:preserve-3d;
+cursor:pointer;
+}
+
+.flip-card:hover .flip-inner{
+transform:rotateY(180deg);
+}
+
+.flip-front, .flip-back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+padding:15px;
+background:white;
+}
+
+.flip-front img{
+width:100%;
+border-radius:10px;
+}
+
+.flip-front h3{
+text-align:center;
+}
+
+.flip-back{
+transform:rotateY(180deg);
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+}
+
+/* BOTON */
+
+button{
+background:linear-gradient(120deg,#00c6ff,#0072ff);
+border:none;
+padding:15px 30px;
+color:white;
+font-size:16px;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.consejos{
+display:none;
+margin-top:30px;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+animation:fade .8s;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(20px)}
+to{opacity:1; transform:translateY(0)}
+}
+
+/* TABLA */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:25px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+th{
+background:#0072ff;
+color:white;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Contaminación del Aire por Emisiones Vehiculares</h1>
+<p>Proyecto Ambiental 2026</p>
+<p><b>Ixchel Susana Hernández Roa</b></p>
+</header>
+
+<nav>
+<a href="#problema">Problema</a>
+<a href="#consecuencias">Consecuencias</a>
+<a href="#soluciones">Soluciones</a>
+<a href="#tecnologia">Tecnología</a>
+</nav>
+
+<section class="hero">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+</section>
+
+<section id="problema">
+<h2>Problema Ambiental</h2>
+<p>
+Las emisiones vehiculares representan una de las principales fuentes de contaminación atmosférica en zonas urbanas.
+Estas liberan CO2, NOx y partículas finas que afectan la salud humana y contribuyen al calentamiento global.
+</p>
+</section>
+
+<section id="consecuencias">
+<h2>Consecuencias</h2>
+
+<div class="cards">
+
+<div class="flip-card">
+<div class="flip-inner">
+
+<div class="flip-front">
+<img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074">
+<h3>Problemas Respiratorios</h3>
+</div>
+
+<div class="flip-back">
+<h3>Problemas Respiratorios</h3>
+<p>
+Puede provocar asma, bronquitis, irritación pulmonar, disminución de la capacidad respiratoria
+y enfermedades cardiovasculares.
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-inner">
+
+<div class="flip-front">
+<img src="https://images.unsplash.com/photo-1483721310020-03333e577078">
+<h3>Cambio Climático</h3>
+</div>
+
+<div class="flip-back">
+<h3>Cambio Climático</h3>
+<p>
+Incrementa la temperatura global, genera sequías, deshielo de glaciares,
+aumento del nivel del mar y fenómenos meteorológicos extremos.
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-inner">
+
+<div class="flip-front">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h3>Daños Ecológicos</h3>
+</div>
+
+<div class="flip-back">
+<h3>Daños Ecológicos</h3>
+<p>
+Provoca pérdida de biodiversidad, deterioro de suelos y agua,
+y alteración del equilibrio natural de los ecosistemas.
+</p>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="soluciones">
+<h2>Soluciones</h2>
+
+<button onclick="mostrar()">Mostrar consejos ecológicos</button>
+
+<div class="consejos" id="tips">
+<ul>
+<li>Usar transporte público</li>
+<li>Caminar o usar bicicleta</li>
+<li>Compartir automóvil</li>
+<li>Mantenimiento vehicular</li>
+</ul>
+</div>
+
+</section>
+
+<section id="tecnologia">
+<h2>Tecnologías utilizadas</h2>
+
+<table>
+<tr>
+<th>Herramienta</th>
+<th>Uso</th>
+</tr>
+
+<tr>
+<td>Canva</td>
+<td>Diseño visual del proyecto</td>
+</tr>
+
+<tr>
+<td>Excel</td>
+<td>Análisis de datos</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+Proyecto Ambiental 🌱 2026
+</footer>
+
+<script>
+function mostrar(){
+document.getElementById("tips").style.display="block"
+}
+</script>
+
+</body>
+</html>
